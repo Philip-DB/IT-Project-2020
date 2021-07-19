@@ -1,0 +1,62 @@
+object dmHospital: TdmHospital
+  OldCreateOrder = False
+  Height = 467
+  Width = 864
+  object ADOConnectionHospitalDatabase: TADOConnection
+    Connected = True
+    ConnectionString = 
+      'Provider=Microsoft.Jet.OLEDB.4.0;User ID=Admin;Data Source=Hospi' +
+      'talDatabase.mdb;Mode=ReadWrite;Persist Security Info=False;Jet O' +
+      'LEDB:System database="";Jet OLEDB:Registry Path="";Jet OLEDB:Dat' +
+      'abase Password="";Jet OLEDB:Engine Type=5;Jet OLEDB:Database Loc' +
+      'king Mode=1;Jet OLEDB:Global Partial Bulk Ops=2;Jet OLEDB:Global' +
+      ' Bulk Transactions=1;Jet OLEDB:New Database Password="";Jet OLED' +
+      'B:Create System Database=False;Jet OLEDB:Encrypt Database=False;' +
+      'Jet OLEDB:Don'#39't Copy Locale on Compact=False;Jet OLEDB:Compact W' +
+      'ithout Replica Repair=False;Jet OLEDB:SFP=False'
+    LoginPrompt = False
+    Mode = cmReadWrite
+    Provider = 'Microsoft.Jet.OLEDB.4.0'
+    Left = 72
+    Top = 83
+  end
+  object ADOTableDocters: TADOTable
+    Active = True
+    Connection = ADOConnectionHospitalDatabase
+    CursorType = ctStatic
+    TableName = 'tblDocters'
+    Left = 232
+    Top = 83
+  end
+  object ADOTablePatients: TADOTable
+    Active = True
+    Connection = ADOConnectionHospitalDatabase
+    CursorType = ctStatic
+    TableName = 'tblPatients'
+    Left = 232
+    Top = 171
+  end
+  object ADOTableMedicine: TADOTable
+    Active = True
+    Connection = ADOConnectionHospitalDatabase
+    CursorType = ctStatic
+    TableName = 'tblMedicine'
+    Left = 232
+    Top = 275
+  end
+  object DataSourceDoc: TDataSource
+    DataSet = ADOTableDocters
+    Left = 344
+    Top = 91
+  end
+  object DataSourcePatient: TDataSource
+    DataSet = ADOTablePatients
+    Left = 344
+    Top = 179
+  end
+  object DataSourceMeds: TDataSource
+    DataSet = ADOTableMedicine
+    Left = 344
+    Top = 275
+  end
+end

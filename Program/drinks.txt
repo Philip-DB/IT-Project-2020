@@ -1,0 +1,8 @@
+Tea#14
+Coffee#14
+Chocolate milk#20
+Strawberry milk#20
+Milk#10
+Soda#22
+Water#10
+Flavoured water#15

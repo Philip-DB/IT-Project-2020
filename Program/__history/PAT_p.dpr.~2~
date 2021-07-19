@@ -1,0 +1,14 @@
+program PAT_p;
+
+uses
+  Vcl.Forms,
+  PAT_u in 'PAT_u.pas' {frmMainProj};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TfrmMainProj, frmMainProj);
+  Application.Run;
+end.

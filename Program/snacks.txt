@@ -1,0 +1,6 @@
+Peanuts#10
+Chocolate bar#15
+Chips (salted)#20
+Chips (unsalted)#18
+Fruit snacks#15
+Gelatin sweets#20

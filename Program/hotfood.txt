@@ -1,0 +1,9 @@
+Hot dogs#49
+Pizza#50
+Cup noodles#30
+Burger#40
+Pie#15
+Toasted sandwhich#17
+Samoosa#10
+Sausage roll#12
+Fried chicken pieces#10
